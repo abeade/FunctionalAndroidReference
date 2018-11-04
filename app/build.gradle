@@ -43,42 +43,43 @@ dependencies {
     // compile fileTree(dir: 'libs', include: ['*.jar'])
 
     // Support
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:recyclerview-v7:24.2.1'
+    implementation 'com.android.support:appcompat-v7:24.2.1'
+    implementation 'com.android.support:recyclerview-v7:24.2.1'
 
     // UI
-    compile 'com.bluelinelabs:conductor:2.0.3'
-    compile 'com.bluelinelabs:conductor-support:2.0.3'
-    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
-    compile 'com.jakewharton.rxbinding:rxbinding-support-v4:0.4.0'
-    compile 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.4.0'
-    compile 'com.jakewharton.rxbinding:rxbinding-design:0.4.0'
-    compile 'com.jakewharton.rxbinding:rxbinding-recyclerview-v7:0.4.0'
+    implementation 'com.bluelinelabs:conductor:2.0.3'
+    implementation 'com.bluelinelabs:conductor-support:2.0.3'
+    implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding-support-v4:0.4.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.4.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding-design:0.4.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding-recyclerview-v7:0.4.0'
 
     // Business logic
-    compile project(':libcore')
-    compile project(':liblogic')
-    compile project(':libservices')
-    compile 'io.reactivex:rxjava:1.2.0'
-    compile 'io.reactivex:rxandroid:1.2.1'
+    implementation project(':libcore')
+    implementation project(':liblogic')
+    implementation project(':libservices')
+    implementation 'io.reactivex:rxjava:1.2.0'
+    implementation 'io.reactivex:rxandroid:1.2.1'
 
     // Logging
-    compile 'com.jakewharton.timber:timber:4.3.1'
+    implementation 'com.jakewharton.timber:timber:4.3.1'
 
     // Debug
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
-    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
-    debugCompile 'io.palaima.debugdrawer:debugdrawer:0.7.0'
-    releaseCompile 'io.palaima.debugdrawer:debugdrawer-no-op:0.7.0'
-    compile 'io.palaima.debugdrawer:debugdrawer-commons:0.7.0'
-    compile 'io.palaima.debugdrawer:debugdrawer-timber:0.7.0'
-    compile 'io.palaima.debugdrawer:debugdrawer-okhttp3:0.7.0'
-    compile 'com.github.brianPlummer:tinydancer:0.0.9'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    debugImplementation 'io.palaima.debugdrawer:debugdrawer:0.7.0'
+    releaseImplementation 'io.palaima.debugdrawer:debugdrawer-no-op:0.7.0'
+    implementation 'io.palaima.debugdrawer:debugdrawer-commons:0.7.0'
+    implementation 'io.palaima.debugdrawer:debugdrawer-timber:0.7.0'
+    implementation 'io.palaima.debugdrawer:debugdrawer-okhttp3:0.7.0'
+    implementation 'com.github.brianPlummer:tinydancer:0.0.9'
 
     // Test
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
 }
